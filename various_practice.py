@@ -13,3 +13,13 @@ for i in range(start, end+1):
         odd += i
 
 print(f"The sum of the even and odd numbers between the range {start} and {end} is even = {even} and odd = {odd}.\n")
+
+# Enter a number to obtain its table:
+
+num = int(input("Please enter a number to obtain it's table.\n"))
+
+for i in range(1,11):
+    calc = num * i
+    print(f"{num} * {i} = {calc}")
+
+
