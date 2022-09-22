@@ -21,5 +21,23 @@ num = int(input("Please enter a number to obtain it's table.\n"))
 for i in range(1,11):
     calc = num * i
     print(f"{num} * {i} = {calc}")
+    
+ 
 
+# Decimal to binary conversion:
+
+num = int(input("Please enter a number to obtain it's binary notation.\n"))
+
+i= 0
+list = ""
+
+while(num):
+    i = num % 2
+    list = list + str(i)
+    num = num//2
+
+length = len(list)
+
+for i in range(length-1, -1, -1):
+    print (list[i], end= '')
 
