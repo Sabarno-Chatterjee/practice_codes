@@ -57,3 +57,14 @@ else:
 
 
 
+# Enter a number to check whether it's perfect number or not.
+
+num = int(input("Please enter a number to check for perfect numbers.\n"))
+sum = 0
+for i in range(1, int(num/2)+1):
+    if num % i ==0:
+        sum += i
+if sum == num:
+    print("It's a perfect number.")
+else:
+    print("It's not a perfect number.")
