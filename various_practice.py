@@ -40,4 +40,20 @@ length = len(list)
 
 for i in range(length-1, -1, -1):
     print (list[i], end= '')
+    
+
+# Pallindrome checker:
+
+num = input("Please enter a number to check whether it's pallindrome of not.\n")
+x = ""
+length = len(num)
+
+for i in range(length-1, -1, -1):
+    x += num[i]
+if x==num:
+    print(f"{num} is a pallindrome.")
+else:
+    print(f"{num} is not a pallindrome.")
+
+
 
